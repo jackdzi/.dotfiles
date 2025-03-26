@@ -9,7 +9,7 @@ alias p='pdf $(fzf)'
 alias mkcd='mkdir_and_cd() { mkdir -p "$1" && cd "$1"; }; mkdir_and_cd'
 # alias code='f() { file=$(find * -type d | fzf); (cd "$file" && neovide); }; f'
 alias ks='kitty-sesh'
-alias tex='texmv() { mkdir -p "$1" && cd "$1" && cp ~/Templates/Latex/letterfonts.tex ~/Templates/Latex/macros.tex ~/Templates/Latex/preamble.tex ~/Templates/Latex/template.tex . && mv template.tex "$1.tex";}; texmv'
+alias tex='texmv() { mkdir -p "$1" && cd "$1" && cp ~/Templates/Latex/letterfonts.tex ~/Templates/Latex/macros.tex ~/Templates/Latex/preamble.tex ~/Templates/Latex/template.tex . && mv template.tex "$1.tex" && nvim "$1".tex}; texmv'
 alias sioyek='flatpak run com.github.ahrm.sioyek'
 alias tm='tmux_attach() { tmux attach -t "$1"}; tmux_attach'
 
